@@ -148,14 +148,6 @@ export { default as NavBarCategoriesDropdownMenu } from "./components/NavBarCate
 
 //
 //
-// -- vids --
-//
-//
-export { default as video01 } from "./assets/vids/-5edc-414b-85d9-12f636869104.mp4";
-export { default as video02 } from "./assets/vids/-1798-4841-a8b9-f315b7c2d6f6.mp4";
-
-//
-//
 // -- imgs --
 //
 //
