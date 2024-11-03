@@ -22,6 +22,8 @@ import AdminProductsPage from "./pages/admin/AdminProductsPage";
 import AdminHomePage from "./pages/admin/AdminHomePage";
 import AdminCategoriesPage from "./pages/admin/AdminCategoriesPage";
 import AdminCategoryPage from "./pages/admin/AdminCategoryPage";
+import OrdersPage from "./pages/OrdersPage";
+import OrderPage from "./pages/OrderPage";
 
 const App = () => {
   // return to the top of the page on navigation
@@ -43,6 +45,8 @@ const App = () => {
           <Route path="/category" element={<MainCategoryPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/wishlist" element={<WishListPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
+          <Route path="/order" element={<OrderPage />} />
           <Route path="/conditions" element={<ConditionDocsPage />} />
           <Route path="/conditions/doc" element={<DocPage />} />
           <Route path="/conditions/new" element={<NewConditionPage />} />

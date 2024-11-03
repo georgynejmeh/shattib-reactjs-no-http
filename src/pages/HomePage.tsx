@@ -90,20 +90,26 @@ const HomePage = () => {
                 <h2 className="text-4xl font-bold text-gray-300">4</h2>
               </div>
               <div className="flex gap-8">
-                <Link to={"/admin/category/1"}>
+                <Link to={"/category"}>
                   <CategoryCard img={categoryImg01} num="8">
                     رخام الأرضيات الداخلية والخارجية
                   </CategoryCard>
                 </Link>
-                <CategoryCard img={categoryImg02} num="8">
-                  رخام المطابخ والحمامات
-                </CategoryCard>
-                <CategoryCard img={categoryImg03} num="8">
-                  رخام الجدران
-                </CategoryCard>
-                <CategoryCard img={categoryImg04} num="8">
-                  رخام الواجهات
-                </CategoryCard>
+                <Link to={"/category"}>
+                  <CategoryCard img={categoryImg02} num="8">
+                    رخام المطابخ والحمامات
+                  </CategoryCard>
+                </Link>
+                <Link to={"/category"}>
+                  <CategoryCard img={categoryImg03} num="8">
+                    رخام الجدران
+                  </CategoryCard>
+                </Link>
+                <Link to={"/category"}>
+                  <CategoryCard img={categoryImg04} num="8">
+                    رخام الواجهات
+                  </CategoryCard>
+                </Link>
               </div>
             </div>
           </section>
