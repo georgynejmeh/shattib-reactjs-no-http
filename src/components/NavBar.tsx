@@ -12,7 +12,7 @@ import {
 const NavBar = () => {
   // const { setIsShownEngineerRequestModal } = useEngineerRequest();
   return (
-    <nav className="flex items-center justify-between border-b py-2 px-8">
+    <nav className="flex items-center justify-between border-b py-4 px-8">
       <img src={shattibLogoRow} alt="" />
       <Link to={"/home"}>
         <span>الصفحة الرئيسية</span>
