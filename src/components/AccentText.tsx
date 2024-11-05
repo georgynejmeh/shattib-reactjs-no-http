@@ -14,7 +14,7 @@ const AccentText = ({ children, size, bold = false }: Props) => {
           ? bold
             ? "text-primary font-bold"
             : "text-primary"
-          : "text-2xl font-bold text-primary"
+          : "text-2xl font-bold text-primary max-lg:text-lg"
       }
     >
       {children}

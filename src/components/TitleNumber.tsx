@@ -36,10 +36,18 @@ const TitleNumber = ({
         (column ? " flex-col items-center justify-center " : " ")
       }
     >
-      <h1 className={`text-xl ${inverse ? "text-gray-400" : "font-bold"}`}>
+      <h1
+        className={`text-xl ${
+          inverse ? "text-gray-400" : "font-bold"
+        } max-lg:text-sm`}
+      >
         {children}
       </h1>
-      <h2 className={`text-xl ${inverse ? "" : "text-gray-400 font-bold"}`}>
+      <h2
+        className={`text-xl ${
+          inverse ? "" : "text-gray-400 font-bold"
+        } max-lg:text-sm`}
+      >
         {subTitle}
       </h2>
     </div>

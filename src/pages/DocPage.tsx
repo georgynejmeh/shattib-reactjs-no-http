@@ -24,10 +24,10 @@ const DocPage = () => {
           />
         </div>
 
-        <section className="flex">
-          <section className="flex flex-col gap-8 w-full">
+        <section className="flex max-lg:flex-col">
+          <section className="flex flex-col gap-8 w-full max-lg:items-center">
             <h1 className="text-2xl font-bold">كراسة مواد بناء</h1>
-            <div className="flex gap-8">
+            <div className="flex gap-8 max-lg:flex-col">
               <div className="flex gap-2">
                 <span className="font-bold">عدد التصنيفات</span>
                 <AccentText bold size="sm">
@@ -40,15 +40,15 @@ const DocPage = () => {
               </div>
             </div>
             <h2 className="text-xl font-bold">المرفقات</h2>
-            <div className="flex gap-4 w-full">
-              <div className="rounded-xl w-1/3 overflow-hidden">
+            <div className="flex gap-4 w-full max-lg:flex-col">
+              <div className="rounded-xl w-1/3 overflow-hidden max-lg:self-center max-lg:w-3/4">
                 <img
                   className="w-full h-full object-cover"
                   src={subCategoryImg01}
                   alt=""
                 />
               </div>
-              <div className="rounded-xl w-1/3 overflow-hidden">
+              <div className="rounded-xl w-1/3 overflow-hidden max-lg:self-center max-lg:w-3/4">
                 <img
                   className="w-full h-full object-cover"
                   src={subCategoryImg01}
@@ -57,9 +57,9 @@ const DocPage = () => {
               </div>
             </div>
           </section>
-          <section className="flex flex-col items-center gap-8 w-1/2">
+          <section className="flex flex-col items-center gap-8 w-1/2 max-lg:w-full max-lg:items-center max-lg:mt-4">
             <h2 className="text-xl font-bold">الفاتورة</h2>
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-lg:flex-col">
               <div className="w-full">
                 <img
                   className="w-full h-full object-cover"
@@ -75,7 +75,7 @@ const DocPage = () => {
                 />
               </div>
             </div>
-            <div className="flex gap-2 self-end">
+            <div className="flex gap-2 self-end max-lg:self-center">
               <button className="w-20 py-1 rounded bg-gray-200">رفض</button>
               <button className="w-20 py-1 rounded bg-green-600 text-white">
                 قبول
@@ -86,17 +86,17 @@ const DocPage = () => {
 
         <hr className="my-12" />
 
-        <section className="flex">
+        <section className="flex max-lg:flex-col">
           <section className="flex flex-col gap-8 w-full">
             <h2 className="text-xl from-black">التعليقات</h2>
             <div>
-              <div className="w-2/3 rounded-t-xl border">
+              <div className="w-2/3 rounded-t-xl border max-lg:w-full">
                 {temp.map(() => (
                   /* Comment */
-                  <div className="flex flex-col gap-4 p-8">
+                  <div className="flex flex-col gap-4 p-8 max-sm:gap-2 max-sm:p-2">
                     {/* Profile Pic - Name - Date */}
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 rounded-full bg-gray-200" />
+                    <div className="flex items-center gap-4 max-sm:gap-1">
+                      <div className="w-16 h-16 rounded-full bg-gray-200 max-sm:w-8 max-sm:h-8" />
                       <div className="flex flex-col">
                         <span className="text-lg">اسم المستخدم</span>
                         <span className="text-s text-gray-400">
@@ -112,7 +112,7 @@ const DocPage = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex flex-col w-2/3 rounded-b-xl border p-4 gap-2">
+              <div className="flex flex-col w-2/3 rounded-b-xl border p-4 gap-2 max-lg:w-full">
                 <div className="flex gap-2">
                   <div className="w-full">
                     <TextInput big placeholder="أضف تعليق" />
@@ -125,7 +125,7 @@ const DocPage = () => {
               </div>
             </div>
           </section>
-          <section className="flex flex-col items-center gap-8 w-1/2 h-96">
+          <section className="flex flex-col items-center gap-8 w-1/2 h-96 max-lg:w-full max-lg:max-w-96 max-lg:mt-4">
             <UploadFile
               title="ارفع صورة الفاتورة"
               subTitle="أضف صورة الفاتورة"

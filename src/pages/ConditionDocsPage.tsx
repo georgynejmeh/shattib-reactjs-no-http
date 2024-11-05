@@ -11,14 +11,22 @@ const ConditionDocsPage = () => {
   return (
     <main>
       <MainPadding>
-        <section className="flex items-center">
+        <section className="flex items-center max-lg:flex-col">
           <h1 className="text-nowrap text-2xl font-bold pb-4">كراسات الشروط</h1>
           <div className="grid w-full">
-            <div className="felx justify-self-center">
-              <RoundButton active>الكل</RoundButton>
-              <RoundButton>معلًقة</RoundButton>
-              <RoundButton>مقبولة</RoundButton>
-              <RoundButton>مرفوضة</RoundButton>
+            <div className="felx justify-self-center max-lg:flex-col max-lg:mb-4">
+              <div className="max-lg:py-2">
+                <RoundButton active>الكل</RoundButton>
+              </div>
+              <div className="max-lg:py-2">
+                <RoundButton>معلًقة</RoundButton>
+              </div>
+              <div className="max-lg:py-2">
+                <RoundButton>مقبولة</RoundButton>
+              </div>
+              <div className="max-lg:py-2">
+                <RoundButton>مرفوضة</RoundButton>
+              </div>
             </div>
           </div>
           <Link to={"new"}>
@@ -36,7 +44,7 @@ const ConditionDocsPage = () => {
             </AccentText> */}
           </Link>
         </section>
-        <section className="flex flex-wrap gap-8 my-16">
+        <section className="flex flex-wrap gap-8 my-16 max-lg:justify-center">
           <ConditionCard status="مرفوضة" />
           <ConditionCard status="معلًقة" />
           <ConditionCard status="مقبولة" />

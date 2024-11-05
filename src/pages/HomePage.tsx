@@ -31,12 +31,12 @@ const HomePage = () => {
               autoPlay
               loop
             /> */}
-            <div className="absolute top-0 pt-32 ps-32 flex flex-col gap-8 z-20">
-              <img className="w-64" src={shattibText} />
-              <span className="text-2xl text-white font-bold">
+            <div className="absolute top-0 pt-16 ps-32 flex flex-col gap-8 z-20 max-lg:pt-8 max-lg:ps-8">
+              <img className="w-64 max-lg:w-48" src={shattibText} />
+              <span className="text-2xl text-white font-bold max-lg:text-lg">
                 منصة شاملة لطلب مواد التشطيب بسهولة وسرعة
               </span>
-              <p className="text-2xl text-white">
+              <p className="text-2xl text-white max-lg:text-lg">
                 تسهيل عملية طلب العينات وإتمام عمليات الشراء بطريقة
                 <br /> مريحة وفعالة، والتأكد من توفر العينات أو المنتجات
                 <br /> المطلوبة قبل إتمام الحجز.
@@ -89,7 +89,7 @@ const HomePage = () => {
                 </h2>
                 <h2 className="text-4xl font-bold text-gray-300">4</h2>
               </div>
-              <div className="flex gap-8">
+              <div className="flex gap-8 overflow-x-auto whitespace-nowrap no-scrollbar">
                 <Link to={"/category"}>
                   <CategoryCard img={categoryImg01} num="8">
                     رخام الأرضيات الداخلية والخارجية
@@ -136,21 +136,28 @@ const HomePage = () => {
                 </h2>
                 <h2 className="text-4xl font-bold text-gray-300">4</h2>
               </div>
-              <div className="flex gap-8">
-                <Link to={"/admin/category/1"}>
+              <div className="flex gap-8 overflow-x-auto whitespace-nowrap no-scrollbar">
+                <Link to={"/category"}>
                   <CategoryCard img={categoryImg01} num="8">
                     رخام الأرضيات الداخلية والخارجية
                   </CategoryCard>
                 </Link>
-                <CategoryCard img={categoryImg02} num="8">
-                  رخام المطابخ والحمامات
-                </CategoryCard>
-                <CategoryCard img={categoryImg03} num="8">
-                  رخام الجدران
-                </CategoryCard>
-                <CategoryCard img={categoryImg04} num="8">
-                  رخام الواجهات
-                </CategoryCard>
+
+                <Link to={"/category"}>
+                  <CategoryCard img={categoryImg02} num="8">
+                    رخام المطابخ والحمامات
+                  </CategoryCard>
+                </Link>
+                <Link to={"/category"}>
+                  <CategoryCard img={categoryImg03} num="8">
+                    رخام الجدران
+                  </CategoryCard>
+                </Link>
+                <Link to={"/category"}>
+                  <CategoryCard img={categoryImg04} num="8">
+                    رخام الواجهات
+                  </CategoryCard>
+                </Link>
               </div>
             </div>
           </section>
@@ -167,7 +174,6 @@ const HomePage = () => {
           <img src={doubleLeftArrowIcon} alt="" />
           <span className="p-4">عرض جميع التصنيفات</span>
         </div> */}
-
         <CompaniesBanner />
       </div>
     </>

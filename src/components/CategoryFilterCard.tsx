@@ -2,7 +2,7 @@ import { Button, priceSlider } from "..";
 
 const CategoryFilterCard = () => {
   return (
-    <div className="m-4 mx-8 p-8 gap-4 flex flex-col rounded-xl border-4 w-fit h-fit">
+    <div className="m-4 mx-8 p-8 gap-4 flex flex-col rounded-xl border-4 w-fit h-fit max-lg:w-full max-lg:max-w-72 max-lg:m-0">
       <h1 className="text-2xl">الفلترة</h1>
       <hr />
       <h1 className="text-2xl">التصنيف</h1>
@@ -12,8 +12,8 @@ const CategoryFilterCard = () => {
         <h2 className="text-gray-500">○ سيليكون ولواصق</h2>
       </div>
       <h1 className="text-2xl">السعر</h1>
-      <img className="w-full px-8" src={priceSlider} alt="" />
-      <div className="flex items-center gap-4">
+      <img className="w-full px-8 max-lg:hidden" src={priceSlider} alt="" />
+      <div className="flex items-center gap-4 max-lg:flex-col max-lg:gap-1">
         <input
           dir="ltr"
           placeholder="500"
@@ -28,7 +28,7 @@ const CategoryFilterCard = () => {
           type="text"
         />
       </div>
-      <div className="flex self-center gap-4">
+      <div className="flex self-center gap-4 max-lg:flex-col max-lg:items-center">
         <div className="w-36">
           <Button size="md">إعادة تعيين</Button>
         </div>

@@ -10,12 +10,12 @@ const WishListPage = () => {
             يمكنك إضافة منتجات جديدة ليتم توفيرها على الموقع أو تنفيذ طلب خاص لك
           </h2>
         </section>
-        <section className="px-16">
+        <section className="px-16 max-lg:p-0">
           <div className="flex flex-row-reverse w-full">
             <div className="w-44">
               <Button size="md">
                 <div className="flex justify-center gap-4">
-                  <img src={addToBoxIcon} alt="" />
+                  <img className="fill-white" src={addToBoxIcon} alt="" />
                   <span>أضف منتج</span>
                 </div>
               </Button>

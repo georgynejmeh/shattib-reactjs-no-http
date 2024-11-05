@@ -15,12 +15,12 @@ const ProductPage = () => {
           title02="طقم شطاف"
           endTitle="طقم شطاف WG006"
         />
-        <section className="flex justify-center items-center h-screen my-16">
+        <section className="flex justify-center items-center my-16">
           <ProductDetailsCard />
         </section>
         <section className="flex flex-col gap-8 py-8">
-          <h1 className="text-3xl font-bold">الوصف</h1>
-          <p className="text-2xl">
+          <h1 className="text-3xl font-bold max-lg:text-xl">الوصف</h1>
+          <p className="text-2xl max-lg:text-lg">
             طقم شطاف هو منتج أساسي للحمام يهدف إلى تقديم تجربة تنظيف شخصية صحية
             وسهلة الاستخدام. يتكون الطقم من شطاف يدوي مصنوع من مواد عالية
             الجودة، يضمن المتانة والفعالية في الأداء. يمكن تثبيت الشطاف بسهولة
