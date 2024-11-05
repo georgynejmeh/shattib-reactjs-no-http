@@ -13,7 +13,7 @@ const NewConditionPage = () => {
         <h1 className="text-2xl font-bold">طرح كراسة</h1>
         <section className="py-8">
           <h2 className="text-xl">عنوان الكراسة</h2>
-          <div className="w-1/2">
+          <div className="w-1/2 max-lg:w-full">
             <TextInput placeholder="أدخل عنوان الكراسة" />
           </div>
         </section>
@@ -24,7 +24,7 @@ const NewConditionPage = () => {
           <CategoryListHorizontal />
         </section>
         <div className="flex flex-col w-full">
-          <div className="w-32 self-end">
+          <div className="w-32 self-end max-lg:w-full max-lg:self-center">
             <Link to={"confirm"}>
               <ButtonGold>التالي</ButtonGold>
             </Link>

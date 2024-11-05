@@ -12,10 +12,10 @@
 }
 
 .orders-table {
-  @apply w-full;
+  @apply w-full max-lg:text-xs;
 }
 .orders-table > thead {
-  @apply bg-gray-100;
+  @apply bg-gray-100 max-lg:text-nowrap;
 }
 .orders-table > thead > tr > th {
   @apply py-4 border-2 border-gray-200;

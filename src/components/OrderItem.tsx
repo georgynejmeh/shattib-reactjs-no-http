@@ -6,7 +6,7 @@ interface Props {
 
 const OrderItem = ({ index }: Props) => {
   return (
-    <div className="flex justify-around items-center gap-4 border-b-2">
+    <div className="flex justify-around items-center gap-4 border-b-2 max-lg:flex-col max-lg:mb-8">
       <h1 className="text-xl font-bold">{index}</h1>
       <div className="bg-gray-100 h-16 aspect-video py-2 px-6 rounded">
         <img className="w-full h-full rounded" src={productImg} alt="" />

@@ -2,7 +2,7 @@ import { ButtonGold, expandCoverImg03 } from "..";
 
 const BannerButton = () => {
   return (
-    <div className="relative grid rounded-3xl overflow-hidden w-2/3 h-2/3 max-lg:h-5/6">
+    <div className="relative grid rounded-3xl overflow-hidden w-2/3 h-2/3 max-lg:h-5/6 max-lg:w-11/12">
       <div className="absolute right-4 w-32 h-28 bg-black bg-opacity-25 rounded-bl rounded-br z-20">
         <div className="h-full flex flex-col items-center justify-center text-white">
           <h1 className="text-2xl">توسيع</h1>

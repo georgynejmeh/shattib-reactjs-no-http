@@ -7,7 +7,7 @@ interface Props {
 
 const CartItemCard = ({ numbered, remove }: Props) => {
   return (
-    <div className="flex items-center gap-12 my-8">
+    <div className="flex items-center gap-12 my-8 max-lg:flex-col">
       {numbered ? <h1 className="text-2xl font-bold">1</h1> : null}
       <div className="flex justify-around items-center rounded-xl bg-gray-100 h-32 w-full max-lg:flex-col max-lg:gap-2 max-lg:p-2">
         <img className="rounded-xl h-28 w-20" src={productImg} alt="" />

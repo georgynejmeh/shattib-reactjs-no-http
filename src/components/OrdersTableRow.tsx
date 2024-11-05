@@ -10,17 +10,17 @@ const OrdersTableRow = ({ status }: Props) => {
     <tr>
       <td>#12345647</td>
       <td>15/8/2024</td>
-      <td className="min-w-52 max-w-52">
+      <td className="min-w-52 max-w-52 max-lg:hidden">
         طقم شطاف WC213، لوح رخام، لوح خشب مطبخ طقم شطاف WC213، لوح رخام، لوح خشب
         مطبخ طقم شطاف WC213، لوح رخام، لوح خشب مطبخ طقم شطاف WC213، لوح رخام،
       </td>
-      <td>8</td>
+      <td className="max-lg:hidden">8</td>
       <td>
         <AccentText>320 ريال</AccentText>
       </td>
       <td>
         <div
-          className={`mx-auto py-1 px-3 rounded-full max-w-28 text-center
+          className={`mx-auto py-1 px-3 rounded-full max-w-28 text-center text-nowrap
             ${
               status === "مكتمل"
                 ? "bg-green-200"
@@ -36,7 +36,7 @@ const OrdersTableRow = ({ status }: Props) => {
           {status}
         </div>
       </td>
-      <td>16/8/2024</td>
+      <td className="max-lg:hidden">16/8/2024</td>
       <td>
         <div className="mx-auto flex justify-center gap-4">
           <Link to={"/order"} className="flex items-center justify-center">
