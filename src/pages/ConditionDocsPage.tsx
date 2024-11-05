@@ -11,10 +11,10 @@ const ConditionDocsPage = () => {
   return (
     <main>
       <MainPadding>
-        <section className="flex items-center max-lg:flex-col">
+        <section className="flex items-center max-lg:flex-col max-lg:w-full">
           <h1 className="text-nowrap text-2xl font-bold pb-4">كراسات الشروط</h1>
           <div className="grid w-full">
-            <div className="felx justify-self-center max-lg:flex-col max-lg:mb-4">
+            <div className="felx justify-self-center max-lg:mb-4">
               <div className="max-lg:py-2">
                 <RoundButton active>الكل</RoundButton>
               </div>

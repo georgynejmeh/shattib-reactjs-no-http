@@ -8,7 +8,7 @@ const WishListPage = () => {
           <h1 className="text-2xl font-bold max-lg:text-center">
             قائمة الرغبات
           </h1>
-          <h2 className="text-xl text-gray-400">
+          <h2 className="text-xl text-gray-400 max-lg:text-center">
             يمكنك إضافة منتجات جديدة ليتم توفيرها على الموقع أو تنفيذ طلب خاص لك
           </h2>
         </section>
