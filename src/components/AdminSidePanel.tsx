@@ -6,6 +6,7 @@ import {
   redLogoutIcon,
   SidePanelItem,
   smallShattibIcon,
+  statisticsIcon,
   twoPapersIcon,
 } from "..";
 
@@ -24,6 +25,9 @@ const AdminSidePanel = () => {
         </Link>
         <SidePanelItem icon={docIcon}>الطلبات</SidePanelItem>
         <SidePanelItem icon={twoPapersIcon}>الكراسات</SidePanelItem>
+        <Link to={"/admin/statistics"}>
+          <SidePanelItem icon={statisticsIcon}>الإحصائيات</SidePanelItem>
+        </Link>
       </div>
       <div>
         <SidePanelItem icon={redLogoutIcon}>تسجيل الخروج</SidePanelItem>

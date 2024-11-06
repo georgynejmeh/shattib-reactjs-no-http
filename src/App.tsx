@@ -24,6 +24,9 @@ import AdminCategoriesPage from "./pages/admin/AdminCategoriesPage";
 import AdminCategoryPage from "./pages/admin/AdminCategoryPage";
 import OrdersPage from "./pages/OrdersPage";
 import OrderPage from "./pages/OrderPage";
+import EngineerConsultantsPage from "./pages/EngineerConsultantsPage";
+import EngineerConsultantPage from "./pages/EngineerConsultantPage";
+import StatisticsPage from "./pages/admin/StatisticsPage";
 
 const App = () => {
   // return to the top of the page on navigation
@@ -56,6 +59,8 @@ const App = () => {
           />
           <Route path="/price-request" element={<PriceRequestPage />} />
           <Route path="/price-request-2" element={<PriceRequestSecondPage />} />
+          <Route path="/consultants" element={<EngineerConsultantsPage />} />
+          <Route path="/consultant" element={<EngineerConsultantPage />} />
         </Route>
         <Route element={<AdminLayout />}>
           <Route path="/admin/home" element={<AdminHomePage />} />
@@ -67,6 +72,7 @@ const App = () => {
             path="/admin/product/new/2"
             element={<AdminNewProductSecondPage />}
           />
+          <Route path="/admin/statistics" element={<StatisticsPage />} />
         </Route>
         button
       </Routes>

@@ -11,10 +11,8 @@ const EngineerRequestCardModal = () => {
     useEngineerRequest();
 
   if (isShownEngineerRequestModal) {
-    console.log("modal true");
     document.body.classList.add("overflow-hidden");
   } else {
-    console.log("modal false");
     document.body.classList.remove("overflow-hidden");
   }
 

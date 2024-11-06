@@ -89,9 +89,15 @@ export { default as smallShattibIcon } from "./assets/svg/icon-shattib-sm.svg";
 export { default as docIcon } from "./assets/svg/icon-doc-sm.svg";
 export { default as twoPapersIcon } from "./assets/svg/icon-two-papers.svg";
 export { default as redLogoutIcon } from "./assets/svg/icon-logout-red.svg";
+export { default as statisticsIcon } from "./assets/svg/icon-statistics.svg";
 // -- Admin Products --
 export { default as bluePenIcon } from "./assets/svg/icon-pen-blue.svg";
 export { default as redTrashIcon } from "./assets/svg/icon-trash-red.svg";
+// -- Admin Statistics --
+export { default as grayCompanyIcon } from "./assets/svg/icon-company-gray.svg";
+export { default as grayPersonIcon } from "./assets/svg/icon-person-gray.svg";
+export { default as grayCartIcon } from "./assets/svg/icon-cart-gray.svg";
+export { default as grayCubeIcon } from "./assets/svg/icon-cube-gray.svg";
 
 //
 //
@@ -153,6 +159,8 @@ export { default as CatDropdownItem } from "./components/CatDropdownItem";
 export { default as NavBarCategoriesDropdownMenu } from "./components/NavBarCategoriesDropdownMenu";
 export { default as OrdersTableRow } from "./components/OrdersTableRow";
 export { default as OrderItem } from "./components/OrderItem";
+export { default as EngineerConsultantTableRow } from "./components/EngineerConsultantTableRow";
+export { default as StatisticsCard } from "./components/StatisticsCard";
 
 //
 //

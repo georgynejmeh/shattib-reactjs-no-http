@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface Props {
-  children: string;
+  children: ReactNode;
   subTitle: string;
   justifyBetween?: boolean;
   size?: "md";
