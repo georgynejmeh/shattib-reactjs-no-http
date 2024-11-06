@@ -1,4 +1,4 @@
-import { ButtonGold, expandCoverImg03 } from "..";
+import { ButtonGold, expandCoverImg03, Link } from "..";
 
 const BannerButton = () => {
   return (
@@ -19,7 +19,9 @@ const BannerButton = () => {
         <br />
         <br />
         <div className="flex w-44 h-12 shadow">
-          <ButtonGold>طلب استشارة</ButtonGold>
+          <Link className="flex w-full" to={"/consultants"}>
+            <ButtonGold>طلب استشارة</ButtonGold>
+          </Link>
         </div>
       </div>
       <img

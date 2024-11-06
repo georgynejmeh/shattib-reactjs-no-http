@@ -1,4 +1,4 @@
-import { purpleParagraphIcon, redTrashIcon } from "..";
+import { Link, purpleParagraphIcon, redTrashIcon } from "..";
 
 interface Props {
   status?: "معلّق" | "معالج";
@@ -23,9 +23,11 @@ const EngineerConsultantTableRow = ({ status }: Props) => {
       </td>
       <td>
         <div className="flex justify-center gap-8">
-          <button>
-            <img src={purpleParagraphIcon} alt="" />
-          </button>
+          <Link to={"/consultant"}>
+            <button>
+              <img src={purpleParagraphIcon} alt="" />
+            </button>
+          </Link>
           <button>
             <img src={redTrashIcon} alt="" />
           </button>
