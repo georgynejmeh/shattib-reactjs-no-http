@@ -7,27 +7,48 @@ import {
   TextInput,
   Link,
   NavBarCategoriesDropdownMenu,
+  menuIcon,
+  useState,
 } from "..";
 
 const NavBar = () => {
+  const [isNavBarCollapsed, setIsNavBarCollapsed] = useState(true);
   // const { setIsShownEngineerRequestModal } = useEngineerRequest();
   return (
     <nav className="flex items-center justify-between border-b py-4 px-8 max-lg:flex-col max-lg:items-start max-lg:p-8 max-lg:gap-8">
-      <img src={shattibLogoRow} alt="" />
-      <Link to={"/home"}>
+      <div className="flex justify-between w-full">
+        <img src={shattibLogoRow} alt="" />
+        <button
+          onClick={() => setIsNavBarCollapsed(!isNavBarCollapsed)}
+          className="lg:hidden"
+        >
+          <img src={menuIcon} alt="" />
+        </button>
+      </div>
+      <Link className={isNavBarCollapsed ? "hidden" : ""} to={"/home"}>
         <span>الصفحة الرئيسية</span>
       </Link>
-      <NavBarCategoriesDropdownMenu />
+      <div className={isNavBarCollapsed ? "hidden" : ""}>
+        <NavBarCategoriesDropdownMenu />
+      </div>
       {/* <Link to={"/home"}>
         <span>جميع المنتجات</span>
       </Link> */}
-      <Link to={"/conditions"}>
+      <Link className={isNavBarCollapsed ? "hidden" : ""} to={"/conditions"}>
         <span>كراسات الشروط</span>
       </Link>
-      <div className="w-96 max-lg:w-full max-lg:max-w-72">
+      <div
+        className={`w-96 max-lg:w-full max-lg:max-w-72 ${
+          isNavBarCollapsed ? "hidden" : ""
+        }`}
+      >
         <TextInput icon={searchIcon} placeholder="البحث عن المنتجات" />
       </div>
-      <div className="lg:hidden flex items-center justify-between w-full">
+      <div
+        className={`lg:hidden flex items-center justify-between w-full ${
+          isNavBarCollapsed ? "hidden" : ""
+        }`}
+      >
         <Link to={"/cart"}>
           <div className="relative flex flex-col items-center">
             <div className="absolute -top-2 -right-3 px-2 bg-primary text-white rounded-full">

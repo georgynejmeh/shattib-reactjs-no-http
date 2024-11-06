@@ -36,7 +36,7 @@ const HomePage = () => {
               <span className="text-2xl text-white font-bold max-lg:text-lg">
                 منصة شاملة لطلب مواد التشطيب بسهولة وسرعة
               </span>
-              <p className="text-2xl text-white max-lg:text-lg">
+              <p className="text-2xl text-white max-lg:text-sm">
                 تسهيل عملية طلب العينات وإتمام عمليات الشراء بطريقة
                 <br /> مريحة وفعالة، والتأكد من توفر العينات أو المنتجات
                 <br /> المطلوبة قبل إتمام الحجز.
