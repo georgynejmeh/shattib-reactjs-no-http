@@ -33,7 +33,7 @@ const AdminCriteriasPage = () => {
           </tr>
         </thead>
         <tbody>
-          {temp.map((item, index) => (
+          {temp.map((index) => (
             <tr key={index}>
               <td>#12345647</td>
               <td>كراسة مواد بناء</td>
