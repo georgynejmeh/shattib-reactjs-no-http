@@ -15,18 +15,10 @@ const ConditionDocsPage = () => {
           <h1 className="text-nowrap text-2xl font-bold pb-4">كراسات الشروط</h1>
           <div className="grid w-full">
             <div className="felx justify-self-center max-lg:mb-4">
-              <div className="max-lg:py-2">
-                <RoundButton active>الكل</RoundButton>
-              </div>
-              <div className="max-lg:py-2">
-                <RoundButton>معلًقة</RoundButton>
-              </div>
-              <div className="max-lg:py-2">
-                <RoundButton>مقبولة</RoundButton>
-              </div>
-              <div className="max-lg:py-2">
-                <RoundButton>مرفوضة</RoundButton>
-              </div>
+              <RoundButton active>الكل</RoundButton>
+              <RoundButton>معلًقة</RoundButton>
+              <RoundButton>مقبولة</RoundButton>
+              <RoundButton>مرفوضة</RoundButton>
             </div>
           </div>
           <Link to={"new"}>

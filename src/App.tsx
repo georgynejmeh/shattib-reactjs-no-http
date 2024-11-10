@@ -27,6 +27,8 @@ import OrderPage from "./pages/OrderPage";
 import EngineerConsultantsPage from "./pages/EngineerConsultantsPage";
 import EngineerConsultantPage from "./pages/EngineerConsultantPage";
 import StatisticsPage from "./pages/admin/StatisticsPage";
+import AdminCriteriaPage from "./pages/admin/AdminCriteriaPage";
+import AdminCriteriasPage from "./pages/admin/AdminCriteriasPage";
 
 const App = () => {
   // return to the top of the page on navigation
@@ -73,6 +75,8 @@ const App = () => {
             element={<AdminNewProductSecondPage />}
           />
           <Route path="/admin/statistics" element={<StatisticsPage />} />
+          <Route path="/admin/criterias" element={<AdminCriteriasPage />} />
+          <Route path="/admin/criterias/:id" element={<AdminCriteriaPage />} />
         </Route>
         button
       </Routes>

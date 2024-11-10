@@ -24,7 +24,9 @@ const AdminSidePanel = () => {
           <SidePanelItem icon={smallShattibIcon}>التصنيفات</SidePanelItem>
         </Link>
         <SidePanelItem icon={docIcon}>الطلبات</SidePanelItem>
-        <SidePanelItem icon={twoPapersIcon}>الكراسات</SidePanelItem>
+        <Link to={"/admin/criterias"}>
+          <SidePanelItem icon={twoPapersIcon}>الكراسات</SidePanelItem>
+        </Link>
         <Link to={"/admin/statistics"}>
           <SidePanelItem icon={statisticsIcon}>الإحصائيات</SidePanelItem>
         </Link>
